@@ -1,10 +1,7 @@
-@extends('layouts.app')
-
-@section('title', 'Dashboard Apotek')
-@section('page_title', 'Dashboard')
-@section('page_subtitle', 'Ringkasan aktivitas apotek hari ini')
-
-@section('content')
+<x-layout.main
+    title="Dashboard Kasir"
+    subtitle="Ringkasan aktivitas apotek hari ini"
+>
 
     {{-- GRID CARD --}}
     <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
@@ -120,4 +117,4 @@
 
     </div>
 
-@endsection
+</x-layout.main>

@@ -34,7 +34,7 @@ class AuthenticatedSessionController extends Controller
             match ($user->role) {
                 'admin'     => route('dashboard.admin', absolute: false),
                 'warehouse' => route('dashboard.warehouse', absolute: false),
-                default     => route('dashboard.cashire', absolute: false),
+                default     => route('dashboard.cashier', absolute: false),
             }
         );
     }
