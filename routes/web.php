@@ -27,9 +27,6 @@ Route::middleware(['auth'])->group(function () {
     // ✅ Dashboard utama (Breeze default butuh name: dashboard)
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    // (optional) kalau lu masih mau pake name dashboard.index juga
-    // Route::get('/dashboard-index', [DashboardController::class, 'index'])->name('dashboard.index');
-
     // ✅ Profile bawaan Breeze (biarin, ga ganggu)
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
